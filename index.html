@@ -36,8 +36,13 @@
       }
 
       @keyframes truck-bounce {
-        0%, 100% { transform: translateY(0px); }
-        50% { transform: translateY(-10px); }
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
       }
 
       .fade-in {
@@ -45,8 +50,14 @@
       }
 
       @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(20px); }
-        to { opacity: 1; transform: translateY(0); }
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
       }
 
       .pulse-glow {
@@ -54,8 +65,13 @@
       }
 
       @keyframes pulse-glow {
-        0%, 100% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.4); }
-        50% { box-shadow: 0 0 40px rgba(59, 130, 246, 0.8); }
+        0%,
+        100% {
+          box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
+        }
+        50% {
+          box-shadow: 0 0 40px rgba(59, 130, 246, 0.8);
+        }
       }
 
       .float-animation {
@@ -63,8 +79,13 @@
       }
 
       @keyframes float {
-        0%, 100% { transform: translateY(0px); }
-        50% { transform: translateY(-15px); }
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-15px);
+        }
       }
 
       .gallery-image {
@@ -78,42 +99,116 @@
     </style>
 
     <!-- Header -->
-    <section class="flex flex-col items-center bg-gradient-to-b from-black via-gray-900 to-blue-900 text-white pb-16 relative overflow-hidden">
+    <section
+      class="flex flex-col items-center bg-gradient-to-b from-black via-gray-900 to-blue-900 text-white pb-16 relative overflow-hidden"
+    >
       <img
         src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/hero/gridPatternBg.svg"
         alt="hero-bg"
         class="absolute bottom-0 left-0 w-full pointer-events-none opacity-20"
       />
-      
+
       <!-- Floating elements for visual appeal -->
-      <div class="absolute top-20 left-10 w-20 h-20 bg-blue-600/20 rounded-full float-animation opacity-50"></div>
-      <div class="absolute top-40 right-20 w-16 h-16 bg-blue-400/30 rounded-full float-animation opacity-60" style="animation-delay: 1s;"></div>
-      <div class="absolute bottom-40 left-1/3 w-12 h-12 bg-blue-500/25 rounded-full float-animation opacity-40" style="animation-delay: 2s;"></div>
-      
+      <div
+        class="absolute top-20 left-10 w-20 h-20 bg-blue-600/20 rounded-full float-animation opacity-50"
+      ></div>
+      <div
+        class="absolute top-40 right-20 w-16 h-16 bg-blue-400/30 rounded-full float-animation opacity-60"
+        style="animation-delay: 1s"
+      ></div>
+      <div
+        class="absolute bottom-40 left-1/3 w-12 h-12 bg-blue-500/25 rounded-full float-animation opacity-40"
+        style="animation-delay: 2s"
+      ></div>
+
       <!-- Navigation -->
-      <nav class="flex items-center justify-between p-4 md:px-16 lg:px-24 xl:px-32 md:py-6 w-full relative z-10">
+      <nav
+        class="flex items-center justify-between p-4 md:px-16 lg:px-24 xl:px-32 md:py-6 w-full relative z-10"
+      >
         <div class="flex items-center space-x-3">
-          <div class="bg-gradient-to-br from-blue-500 to-blue-700 p-3 rounded-xl truck-animation pulse-glow shadow-2xl">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M5 17h2v2a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-2h2a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-4V5a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1z"/>
-              <circle cx="7.5" cy="19.5" r="1.5"/>
-              <circle cx="16.5" cy="19.5" r="1.5"/>
+          <!-- <div
+            class="bg-gradient-to-br from-blue-500 to-blue-700 p-3 rounded-xl truck-animation pulse-glow shadow-2xl"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M5 17h2v2a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-2h2a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-4V5a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1z"
+              />
+              <circle cx="7.5" cy="19.5" r="1.5" />
+              <circle cx="16.5" cy="19.5" r="1.5" />
             </svg>
+          </div> -->
+
+          <div
+            class="bg-gradient-to-br from-blue-500 to-blue-700 p-2 rounded-xl shadow-2xl"
+          >
+            <img
+              src="./project.jpg"
+              alt="Daniel Junk Removal Logo"
+              class="w-10 h-10 object-contain rounded-lg"
+            />
           </div>
           <div>
-            <h1 class="text-xl md:text-2xl font-bold text-white">Daniel Junk Removal</h1>
+            <h1 class="text-xl md:text-2xl font-bold text-white">
+              Daniel Junk Removal
+            </h1>
             <p class="text-blue-300 text-sm">& Furniture Delivery</p>
           </div>
         </div>
 
-        <div id="menu" class="max-md:absolute max-md:top-0 max-md:z-20 max-md:left-0 max-md:w-0 max-md:transition-all max-md:duration-300 max-md:overflow-hidden max-md:h-full max-md:bg-black/95 max-md:backdrop-blur-lg max-md:flex-col max-md:justify-center flex items-center gap-8 font-medium">
-          <a href="#home" class="hover:text-blue-300 transition-all duration-300 hover:scale-105">Home</a>
-          <a href="#about" class="hover:text-blue-300 transition-all duration-300 hover:scale-105">About Us</a>
-          <a href="#services" class="hover:text-blue-300 transition-all duration-300 hover:scale-105">Services</a>
-          <a href="#gallery" class="hover:text-blue-300 transition-all duration-300 hover:scale-105">Gallery</a>
-          <a href="#contact" class="hover:text-blue-300 transition-all duration-300 hover:scale-105">Contact Us</a>
-          <button id="close-menu" class="md:hidden bg-gray-900 hover:bg-gray-800 text-white p-2 rounded-md aspect-square font-medium transition">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <div
+          id="menu"
+          class="max-md:absolute max-md:top-0 max-md:z-20 max-md:left-0 max-md:w-0 max-md:transition-all max-md:duration-300 max-md:overflow-hidden max-md:h-full max-md:bg-black/95 max-md:backdrop-blur-lg max-md:flex-col max-md:justify-center flex items-center gap-8 font-medium"
+        >
+          <a
+            href="#home"
+            class="hover:text-blue-300 transition-all duration-300 hover:scale-105"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="hover:text-blue-300 transition-all duration-300 hover:scale-105"
+            >About Us</a
+          >
+          <a
+            href="#services"
+            class="hover:text-blue-300 transition-all duration-300 hover:scale-105"
+            >Services</a
+          >
+          <a
+            href="#gallery"
+            class="hover:text-blue-300 transition-all duration-300 hover:scale-105"
+            >Gallery</a
+          >
+          <a
+            href="#contact"
+            class="hover:text-blue-300 transition-all duration-300 hover:scale-105"
+            >Contact Us</a
+          >
+          <button
+            id="close-menu"
+            class="md:hidden bg-gray-900 hover:bg-gray-800 text-white p-2 rounded-md aspect-square font-medium transition"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
               <path d="M18 6 6 18" />
               <path d="m6 6 12 12" />
             </svg>
@@ -121,14 +216,42 @@
         </div>
 
         <div class="flex items-center gap-4">
-          <a href="tel:8545880808" class="hidden md:flex items-center gap-2 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-6 py-3 rounded-full font-semibold transition-all transform hover:scale-105 shadow-xl pulse-glow">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          <a
+            href="tel:8545880808"
+            class="hidden md:flex items-center gap-2 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-6 py-3 rounded-full font-semibold transition-all transform hover:scale-105 shadow-xl pulse-glow"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+              />
             </svg>
             Call Now
           </a>
-          <button id="open-menu" class="md:hidden bg-gray-900 hover:bg-gray-800 text-white p-2 rounded-md aspect-square font-medium transition">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <button
+            id="open-menu"
+            class="md:hidden bg-gray-900 hover:bg-gray-800 text-white p-2 rounded-md aspect-square font-medium transition"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
               <path d="M4 12h16" />
               <path d="M4 18h16" />
               <path d="M4 6h16" />
@@ -138,47 +261,108 @@
       </nav>
 
       <!-- Hero Content -->
-      <div id="home" class="relative z-10 text-center max-w-5xl mx-auto px-4 mt-16">
-        <div class="inline-flex items-center gap-2 bg-blue-900/60 border border-blue-600 px-6 py-3 rounded-full text-sm mb-8 fade-in backdrop-blur-sm">
-          <span class="w-3 h-3 bg-green-400 rounded-full animate-pulse shadow-lg"></span>
+      <div
+        id="home"
+        class="relative z-10 text-center max-w-5xl mx-auto px-4 mt-16"
+      >
+        <div
+          class="inline-flex items-center gap-2 bg-blue-900/60 border border-blue-600 px-6 py-3 rounded-full text-sm mb-8 fade-in backdrop-blur-sm"
+        >
+          <span
+            class="w-3 h-3 bg-green-400 rounded-full animate-pulse shadow-lg"
+          ></span>
           Available 7 Days a Week • Licensed & Insured
         </div>
 
-        <h1 class="text-5xl md:text-7xl font-bold mb-8 bg-gradient-to-r from-white via-blue-100 to-blue-300 text-transparent bg-clip-text fade-in leading-tight">
+        <h1
+          class="text-5xl md:text-7xl font-bold mb-8 bg-gradient-to-r from-white via-blue-100 to-blue-300 text-transparent bg-clip-text fade-in leading-tight"
+        >
           You Call, I Haul!
         </h1>
-        
-        <p class="text-2xl md:text-3xl text-blue-200 mb-6 fade-in font-semibold">
+
+        <p
+          class="text-2xl md:text-3xl text-blue-200 mb-6 fade-in font-semibold"
+        >
           Professional Junk Removal & Furniture Delivery Services
         </p>
-        
-        <p class="text-gray-300 text-lg md:text-xl max-w-3xl mx-auto mb-10 fade-in leading-relaxed">
-          Serving Little River, Calabash, North Myrtle Beach, Longs, and Myrtle Beach with reliable, affordable mobile services. From junk removal to furniture delivery - we've got you covered!
+
+        <p
+          class="text-gray-300 text-lg md:text-xl max-w-3xl mx-auto mb-10 fade-in leading-relaxed"
+        >
+          Serving Little River, Calabash, North Myrtle Beach, Longs, and Myrtle
+          Beach with reliable, affordable mobile services. From junk removal to
+          furniture delivery - we've got you covered!
         </p>
 
-        <div class="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16 fade-in">
-          <a href="tel:8545880808" class="flex items-center gap-3 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-10 py-5 rounded-full text-xl font-bold transition-all transform hover:scale-105 shadow-2xl pulse-glow">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+        <div
+          class="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16 fade-in"
+        >
+          <a
+            href="tel:8545880808"
+            class="flex items-center gap-3 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-10 py-5 rounded-full text-xl font-bold transition-all transform hover:scale-105 shadow-2xl pulse-glow"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+              />
             </svg>
             Call 854-588-0808
           </a>
-          <a href="#services" class="flex items-center gap-3 border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white px-10 py-5 rounded-full text-xl font-bold transition-all transform hover:scale-105 shadow-xl backdrop-blur-sm">
+          <a
+            href="#services"
+            class="flex items-center gap-3 border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white px-10 py-5 rounded-full text-xl font-bold transition-all transform hover:scale-105 shadow-xl backdrop-blur-sm"
+          >
             View Services
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M7 17L17 7"/>
-              <path d="M7 7h10v10"/>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M7 17L17 7" />
+              <path d="M7 7h10v10" />
             </svg>
           </a>
         </div>
 
         <!-- Enhanced Contact Info Strip -->
-        <div class="bg-black/50 backdrop-blur-lg border border-blue-700 rounded-2xl p-6 max-w-4xl mx-auto fade-in shadow-2xl">
+        <div
+          class="bg-black/50 backdrop-blur-lg border border-blue-700 rounded-2xl p-6 max-w-4xl mx-auto fade-in shadow-2xl"
+        >
           <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div class="flex items-center justify-center gap-3 text-center">
-              <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              <div
+                class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  />
                 </svg>
               </div>
               <div>
@@ -186,12 +370,26 @@
                 <div class="text-blue-300 text-lg font-bold">854-588-0808</div>
               </div>
             </div>
-            
+
             <div class="flex items-center justify-center gap-3 text-center">
-              <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                  <polyline points="22,6 12,13 2,6"/>
+              <div
+                class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  />
+                  <polyline points="22,6 12,13 2,6" />
                 </svg>
               </div>
               <div>
@@ -199,12 +397,24 @@
                 <div class="text-blue-300">metinmail@yahoo.com</div>
               </div>
             </div>
-            
+
             <div class="flex items-center justify-center gap-3 text-center">
-              <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                  <circle cx="12" cy="10" r="3"/>
+              <div
+                class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
                 </svg>
               </div>
               <div>
@@ -218,77 +428,147 @@
     </section>
 
     <!-- About Us Section -->
-    <section id="about" class="py-24 px-6 bg-gradient-to-b from-gray-900 to-black text-white">
+    <section
+      id="about"
+      class="py-24 px-6 bg-gradient-to-b from-gray-900 to-black text-white"
+    >
       <div class="max-w-7xl mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 class="text-5xl font-bold mb-8 text-blue-400">About Daniel Junk Removal</h2>
+            <h2 class="text-5xl font-bold mb-8 text-blue-400">
+              About Daniel Junk Removal
+            </h2>
             <p class="text-gray-300 text-xl leading-relaxed mb-8">
-              Hi, I'm <strong class="text-white">Daniel Czokos</strong>, the proud owner of 
-              <strong class="text-blue-400">Daniel Junk Removal & Furniture Delivery</strong>. I provide 
-              reliable and affordable mobile services including junk removal, furniture delivery, small moves, 
-              and construction material delivery.
+              Hi, I'm <strong class="text-white">Daniel Czokos</strong>, the
+              proud owner of
+              <strong class="text-blue-400"
+                >Daniel Junk Removal & Furniture Delivery</strong
+              >. I provide reliable and affordable mobile services including
+              junk removal, furniture delivery, small moves, and construction
+              material delivery.
             </p>
             <p class="text-gray-300 text-xl leading-relaxed mb-8">
-              Based in <strong class="text-white">Little River</strong>, I proudly serve 
-              <strong class="text-blue-400">Calabash, North Myrtle Beach, Longs, and Myrtle Beach</strong>. 
-              Whether you're moving, cleaning up, or just need help with hauling — I'm just a call away.
+              Based in <strong class="text-white">Little River</strong>, I
+              proudly serve
+              <strong class="text-blue-400"
+                >Calabash, North Myrtle Beach, Longs, and Myrtle Beach</strong
+              >. Whether you're moving, cleaning up, or just need help with
+              hauling — I'm just a call away.
             </p>
             <p class="text-gray-300 text-xl leading-relaxed mb-10">
-              My goal is simple: <em class="text-blue-300 text-2xl font-semibold">"You Call, I Haul!"</em> - 
-              making your life easier with honest work and dependable service.
+              My goal is simple:
+              <em class="text-blue-300 text-2xl font-semibold"
+                >"You Call, I Haul!"</em
+              >
+              - making your life easier with honest work and dependable service.
             </p>
-            
+
             <!-- Enhanced Stats -->
             <div class="grid grid-cols-3 gap-8 mt-12">
-              <div class="text-center bg-gray-800/50 rounded-xl p-6 border border-gray-700">
+              <div
+                class="text-center bg-gray-800/50 rounded-xl p-6 border border-gray-700"
+              >
                 <div class="text-4xl font-bold text-blue-400 mb-2">500+</div>
                 <div class="text-gray-400 font-medium">Jobs Completed</div>
               </div>
-              <div class="text-center bg-gray-800/50 rounded-xl p-6 border border-gray-700">
+              <div
+                class="text-center bg-gray-800/50 rounded-xl p-6 border border-gray-700"
+              >
                 <div class="text-4xl font-bold text-blue-400 mb-2">7</div>
                 <div class="text-gray-400 font-medium">Days a Week</div>
               </div>
-              <div class="text-center bg-gray-800/50 rounded-xl p-6 border border-gray-700">
+              <div
+                class="text-center bg-gray-800/50 rounded-xl p-6 border border-gray-700"
+              >
                 <div class="text-4xl font-bold text-blue-400 mb-2">5</div>
                 <div class="text-gray-400 font-medium">Cities Served</div>
               </div>
             </div>
           </div>
-          
+
           <div class="relative">
-            <div class="bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 rounded-3xl p-10 shadow-2xl pulse-glow">
+            <div
+              class="bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 rounded-3xl p-10 shadow-2xl pulse-glow"
+            >
               <div class="text-center">
-                <div class="w-32 h-32 bg-white rounded-full flex items-center justify-center mx-auto mb-8 truck-animation shadow-2xl">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 17h2v2a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-2h2a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-4V5a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1z"/>
-                    <circle cx="7.5" cy="19.5" r="1.5"/>
-                    <circle cx="16.5" cy="19.5" r="1.5"/>
+                <div
+                  class="w-32 h-32 bg-white rounded-full flex items-center justify-center mx-auto mb-8 truck-animation shadow-2xl"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="60"
+                    height="60"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#2563eb"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M5 17h2v2a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-2h2a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-4V5a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1z"
+                    />
+                    <circle cx="7.5" cy="19.5" r="1.5" />
+                    <circle cx="16.5" cy="19.5" r="1.5" />
                   </svg>
                 </div>
-                <h3 class="text-3xl font-bold text-white mb-6">Why Choose Daniel?</h3>
+                <h3 class="text-3xl font-bold text-white mb-6">
+                  Why Choose Daniel?
+                </h3>
                 <ul class="text-left text-blue-100 space-y-4 text-lg">
                   <li class="flex items-center gap-4">
-                    <svg class="w-6 h-6 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                    <svg
+                      class="w-6 h-6 text-green-400 flex-shrink-0"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      ></path>
                     </svg>
                     Licensed & Fully Insured
                   </li>
                   <li class="flex items-center gap-4">
-                    <svg class="w-6 h-6 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                    <svg
+                      class="w-6 h-6 text-green-400 flex-shrink-0"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      ></path>
                     </svg>
                     Same-Day Service Available
                   </li>
                   <li class="flex items-center gap-4">
-                    <svg class="w-6 h-6 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                    <svg
+                      class="w-6 h-6 text-green-400 flex-shrink-0"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      ></path>
                     </svg>
                     Eco-Friendly Disposal Methods
                   </li>
                   <li class="flex items-center gap-4">
-                    <svg class="w-6 h-6 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                    <svg
+                      class="w-6 h-6 text-green-400 flex-shrink-0"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      ></path>
                     </svg>
                     Fair & Competitive Pricing
                   </li>
@@ -306,25 +586,45 @@
         <div class="text-center mb-20">
           <h2 class="text-5xl font-bold mb-8 text-blue-400">Our Services</h2>
           <p class="text-2xl text-gray-300 max-w-3xl mx-auto">
-            Professional hauling services tailored to your needs. No job too big or small!
+            Professional hauling services tailored to your needs. No job too big
+            or small!
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 m-auto"
+        >
           <!-- Service Card 1 -->
-          <div class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 p-10 rounded-3xl shadow-2xl hover:shadow-blue-500/20 hover:scale-105 transition-all duration-500 border border-gray-600 hover:border-blue-500 group">
-            <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl flex items-center justify-center mb-8 truck-animation group-hover:scale-110 transition-transform shadow-xl">
-              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="3,6 5,6 21,6"/>
-                <path d="M19,6 L17,20 L7,20 L5,6"/>
-                <path d="M10,11 L10,17"/>
-                <path d="M14,11 L14,17"/>
-                <path d="M9,6 L9,4 C9,3.45 9.45,3 10,3 L14,3 C14.55,3 15,3.45 15,4 L15,6"/>
+          <div
+            class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 p-10 rounded-3xl shadow-2xl hover:shadow-blue-500/20 hover:scale-105 transition-all duration-500 border border-gray-600 hover:border-blue-500 group"
+          >
+            <div
+              class="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl flex items-center justify-center mb-8 truck-animation group-hover:scale-110 transition-transform shadow-xl"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="36"
+                height="36"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="3,6 5,6 21,6" />
+                <path d="M19,6 L17,20 L7,20 L5,6" />
+                <path d="M10,11 L10,17" />
+                <path d="M14,11 L14,17" />
+                <path
+                  d="M9,6 L9,4 C9,3.45 9.45,3 10,3 L14,3 C14.55,3 15,3.45 15,4 L15,6"
+                />
               </svg>
             </div>
             <h3 class="text-2xl font-bold text-white mb-6">Junk Removal</h3>
             <p class="text-gray-300 mb-8 text-lg leading-relaxed">
-              Clear out unwanted items from homes, garages, yards, and more. Fast, efficient, and eco-friendly disposal.
+              Clear out unwanted items from homes, garages, yards, and more.
+              Fast, efficient, and eco-friendly disposal.
             </p>
             <ul class="text-gray-400 space-y-3">
               <li class="flex items-center gap-3">
@@ -346,19 +646,34 @@
             </ul>
           </div>
 
-          <!-- Service Card 3 -->
-          <div class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 p-10 rounded-3xl shadow-2xl hover:shadow-blue-500/20 hover:scale-105 transition-all duration-500 border border-gray-600 hover:border-blue-500 group">
-            <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform shadow-xl">
-              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M3 12h18l-3-3"/>
-                <path d="M3 12l3-3"/>
-                <path d="M3 12h18l-3 3"/>
-                <path d="M3 12l3 3"/>
+          <!-- Service Card 2 -->
+          <div
+            class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 p-10 rounded-3xl shadow-2xl hover:shadow-blue-500/20 hover:scale-105 transition-all duration-500 border border-gray-600 hover:border-blue-500 group"
+          >
+            <div
+              class="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform shadow-xl"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="36"
+                height="36"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M3 12h18l-3-3" />
+                <path d="M3 12l3-3" />
+                <path d="M3 12h18l-3 3" />
+                <path d="M3 12l3 3" />
               </svg>
             </div>
             <h3 class="text-2xl font-bold text-white mb-6">Small Moves</h3>
             <p class="text-gray-300 mb-8 text-lg leading-relaxed">
-              Perfect for apartment moves, single-room relocations, or transporting items between locations.
+              Perfect for apartment moves, single-room relocations, or
+              transporting items between locations.
             </p>
             <ul class="text-gray-400 space-y-3">
               <li class="flex items-center gap-3">
@@ -380,18 +695,35 @@
             </ul>
           </div>
 
-          <!-- Service Card 4 -->
-          <div class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 p-10 rounded-3xl shadow-2xl hover:shadow-blue-500/20 hover:scale-105 transition-all duration-500 border border-gray-600 hover:border-blue-500 group">
-            <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform shadow-xl">
-              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M3 21h18"/>
-                <path d="M5 21V7l8-4v18"/>
-                <path d="M19 21V11l-6-4"/>
+          <!-- Service Card 3 -->
+          <div
+            class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 p-10 rounded-3xl shadow-2xl hover:shadow-blue-500/20 hover:scale-105 transition-all duration-500 border border-gray-600 hover:border-blue-500 group"
+          >
+            <div
+              class="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform shadow-xl"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="36"
+                height="36"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M3 21h18" />
+                <path d="M5 21V7l8-4v18" />
+                <path d="M19 21V11l-6-4" />
               </svg>
             </div>
-            <h3 class="text-2xl font-bold text-white mb-6">Construction Materials</h3>
+            <h3 class="text-2xl font-bold text-white mb-6">
+              Construction Materials
+            </h3>
             <p class="text-gray-300 mb-8 text-lg leading-relaxed">
-              Reliable delivery of construction materials directly to your job site. Fast and dependable service.
+              Reliable delivery of construction materials directly to your job
+              site. Fast and dependable service.
             </p>
             <ul class="text-gray-400 space-y-3">
               <li class="flex items-center gap-3">
@@ -412,14 +744,83 @@
               </li>
             </ul>
           </div>
+          <!-- Service Card 4 -->
+          <div
+            class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 p-10 rounded-3xl shadow-2xl hover:shadow-blue-500/20 hover:scale-105 transition-all duration-500 border border-gray-600 hover:border-blue-500 group"
+          >
+            <div
+              class="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform shadow-xl"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="36"
+                height="36"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M2 12h20" />
+                <path d="M6 12v-6h12v6" />
+                <path d="M6 12v6" />
+                <path d="M18 12v6" />
+                <path d="M9 18v2" />
+                <path d="M15 18v2" />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-6">
+              Furniture Delivery
+            </h3>
+            <p class="text-gray-300 mb-8 text-lg leading-relaxed">
+              Safe and on-time furniture delivery with careful handling and
+              optional assembly service.
+            </p>
+            <ul class="text-gray-400 space-y-3">
+              <li class="flex items-center gap-3">
+                <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
+                Same-day delivery
+              </li>
+              <li class="flex items-center gap-3">
+                <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
+                Large item transport
+              </li>
+              <li class="flex items-center gap-3">
+                <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
+                In-home placement
+              </li>
+              <li class="flex items-center gap-3">
+                <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
+                Assembly on request
+              </li>
+            </ul>
+          </div>
         </div>
 
         <!-- Call to Action -->
         <div class="text-center mt-20">
-          <p class="text-2xl text-blue-300 mb-8 font-semibold">Ready to get started?</p>
-          <a href="tel:8545880808" class="inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-12 py-6 rounded-full text-xl font-bold transition-all transform hover:scale-105 shadow-2xl pulse-glow">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          <p class="text-2xl text-blue-300 mb-8 font-semibold">
+            Ready to get started?
+          </p>
+          <a
+            href="tel:8545880808"
+            class="inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-12 py-6 rounded-full text-xl font-bold transition-all transform hover:scale-105 shadow-2xl pulse-glow"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+              />
             </svg>
             Get Free Quote - 854-588-0808
           </a>
@@ -428,106 +829,185 @@
     </section>
 
     <!-- Photo Gallery Section -->
-    <section id="gallery" class="py-24 px-6 bg-gradient-to-b from-gray-900 to-black text-white">
+    <section
+      id="gallery"
+      class="py-24 px-6 bg-gradient-to-b from-gray-900 to-black text-white"
+    >
       <div class="max-w-7xl mx-auto">
         <div class="text-center mb-20">
-          <h2 class="text-5xl font-bold mb-8 text-blue-400">Our Work Gallery</h2>
+          <h2 class="text-5xl font-bold mb-8 text-blue-400">
+            Our Work Gallery
+          </h2>
           <p class="text-2xl text-gray-300 max-w-3xl mx-auto">
-            See the quality of our work and the results we deliver for our customers across the Grand Strand
+            See the quality of our work and the results we deliver for our
+            customers across the Grand Strand
           </p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Gallery Item 1 -->
-          <div class="bg-gradient-to-br from-gray-800 to-gray-700 rounded-2xl overflow-hidden shadow-2xl hover:shadow-blue-500/20 transition-all duration-500 group">
+          <div
+            class="bg-gradient-to-br from-gray-800 to-gray-700 rounded-2xl overflow-hidden shadow-2xl hover:shadow-blue-500/20 transition-all duration-500 group"
+          >
             <div class="relative overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=500&h=300&auto=format&fit=crop" 
-                   alt="Junk removal service" 
-                   class="w-full h-64 object-cover gallery-image">
-              <div class="absolute inset-0 bg-blue-900/20 group-hover:bg-blue-900/40 transition-all duration-300"></div>
+              <img
+                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=500&h=300&auto=format&fit=crop"
+                alt="Junk removal service"
+                class="w-full h-64 object-cover gallery-image"
+              />
+              <div
+                class="absolute inset-0 bg-blue-900/20 group-hover:bg-blue-900/40 transition-all duration-300"
+              ></div>
             </div>
             <div class="p-6">
-              <h3 class="text-xl font-bold text-white mb-2">Complete Garage Cleanout</h3>
-              <p class="text-gray-400">Full garage junk removal and cleanup in North Myrtle Beach</p>
+              <h3 class="text-xl font-bold text-white mb-2">
+                Complete Garage Cleanout
+              </h3>
+              <p class="text-gray-400">
+                Full garage junk removal and cleanup in North Myrtle Beach
+              </p>
             </div>
           </div>
 
           <!-- Gallery Item 2 -->
-          <div class="bg-gradient-to-br from-gray-800 to-gray-700 rounded-2xl overflow-hidden shadow-2xl hover:shadow-blue-500/20 transition-all duration-500 group">
+          <div
+            class="bg-gradient-to-br from-gray-800 to-gray-700 rounded-2xl overflow-hidden shadow-2xl hover:shadow-blue-500/20 transition-all duration-500 group"
+          >
             <div class="relative overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=500&h=300&auto=format&fit=crop" 
-                   alt="Furniture delivery service" 
-                   class="w-full h-64 object-cover gallery-image">
-              <div class="absolute inset-0 bg-blue-900/20 group-hover:bg-blue-900/40 transition-all duration-300"></div>
+              <img
+                src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=500&h=300&auto=format&fit=crop"
+                alt="Furniture delivery service"
+                class="w-full h-64 object-cover gallery-image"
+              />
+              <div
+                class="absolute inset-0 bg-blue-900/20 group-hover:bg-blue-900/40 transition-all duration-300"
+              ></div>
             </div>
             <div class="p-6">
-              <h3 class="text-xl font-bold text-white mb-2">Furniture Delivery</h3>
-              <p class="text-gray-400">Safe delivery and setup of new living room furniture</p>
+              <h3 class="text-xl font-bold text-white mb-2">
+                Furniture Delivery
+              </h3>
+              <p class="text-gray-400">
+                Safe delivery and setup of new living room furniture
+              </p>
             </div>
           </div>
 
           <!-- Gallery Item 3 -->
-          <div class="bg-gradient-to-br from-gray-800 to-gray-700 rounded-2xl overflow-hidden shadow-2xl hover:shadow-blue-500/20 transition-all duration-500 group">
+          <div
+            class="bg-gradient-to-br from-gray-800 to-gray-700 rounded-2xl overflow-hidden shadow-2xl hover:shadow-blue-500/20 transition-all duration-500 group"
+          >
             <div class="relative overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1558618047-3c8676c6c4a5?q=80&w=500&h=300&auto=format&fit=crop" 
-                   alt="Construction materials delivery" 
-                   class="w-full h-64 object-cover gallery-image">
-              <div class="absolute inset-0 bg-blue-900/20 group-hover:bg-blue-900/40 transition-all duration-300"></div>
+              <img
+                src="https://plus.unsplash.com/premium_photo-1663089993922-5d4601e1127b?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Construction materials delivery"
+                class="w-full h-64 object-cover gallery-image"
+              />
+              <div
+                class="absolute inset-0 bg-blue-900/20 group-hover:bg-blue-900/40 transition-all duration-300"
+              ></div>
             </div>
             <div class="p-6">
-              <h3 class="text-xl font-bold text-white mb-2">Construction Delivery</h3>
-              <p class="text-gray-400">Drywall and materials delivered to job site in Longs</p>
+              <h3 class="text-xl font-bold text-white mb-2">
+                Construction Delivery
+              </h3>
+              <p class="text-gray-400">
+                Drywall and materials delivered to job site in Longs
+              </p>
             </div>
           </div>
 
           <!-- Gallery Item 4 -->
-          <div class="bg-gradient-to-br from-gray-800 to-gray-700 rounded-2xl overflow-hidden shadow-2xl hover:shadow-blue-500/20 transition-all duration-500 group">
+          <div
+            class="bg-gradient-to-br from-gray-800 to-gray-700 rounded-2xl overflow-hidden shadow-2xl hover:shadow-blue-500/20 transition-all duration-500 group"
+          >
             <div class="relative overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=500&h=300&auto=format&fit=crop" 
-                   alt="Small move service" 
-                   class="w-full h-64 object-cover gallery-image">
-              <div class="absolute inset-0 bg-blue-900/20 group-hover:bg-blue-900/40 transition-all duration-300"></div>
+              <img
+                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=500&h=300&auto=format&fit=crop"
+                alt="Small move service"
+                class="w-full h-64 object-cover gallery-image"
+              />
+              <div
+                class="absolute inset-0 bg-blue-900/20 group-hover:bg-blue-900/40 transition-all duration-300"
+              ></div>
             </div>
             <div class="p-6">
               <h3 class="text-xl font-bold text-white mb-2">Apartment Move</h3>
-              <p class="text-gray-400">Complete studio apartment relocation in Myrtle Beach</p>
+              <p class="text-gray-400">
+                Complete studio apartment relocation in Myrtle Beach
+              </p>
             </div>
           </div>
 
           <!-- Gallery Item 5 -->
-          <div class="bg-gradient-to-br from-gray-800 to-gray-700 rounded-2xl overflow-hidden shadow-2xl hover:shadow-blue-500/20 transition-all duration-500 group">
+          <div
+            class="bg-gradient-to-br from-gray-800 to-gray-700 rounded-2xl overflow-hidden shadow-2xl hover:shadow-blue-500/20 transition-all duration-500 group"
+          >
             <div class="relative overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=500&h=300&auto=format&fit=crop" 
-                   alt="Yard cleanup service" 
-                   class="w-full h-64 object-cover gallery-image">
-              <div class="absolute inset-0 bg-blue-900/20 group-hover:bg-blue-900/40 transition-all duration-300"></div>
+              <img
+                src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=500&h=300&auto=format&fit=crop"
+                alt="Yard cleanup service"
+                class="w-full h-64 object-cover gallery-image"
+              />
+              <div
+                class="absolute inset-0 bg-blue-900/20 group-hover:bg-blue-900/40 transition-all duration-300"
+              ></div>
             </div>
             <div class="p-6">
-              <h3 class="text-xl font-bold text-white mb-2">Yard Debris Removal</h3>
-              <p class="text-gray-400">Storm cleanup and yard waste removal in Calabash</p>
+              <h3 class="text-xl font-bold text-white mb-2">
+                Yard Debris Removal
+              </h3>
+              <p class="text-gray-400">
+                Storm cleanup and yard waste removal in Calabash
+              </p>
             </div>
           </div>
 
           <!-- Gallery Item 6 -->
-          <div class="bg-gradient-to-br from-gray-800 to-gray-700 rounded-2xl overflow-hidden shadow-2xl hover:shadow-blue-500/20 transition-all duration-500 group">
+          <div
+            class="bg-gradient-to-br from-gray-800 to-gray-700 rounded-2xl overflow-hidden shadow-2xl hover:shadow-blue-500/20 transition-all duration-500 group"
+          >
             <div class="relative overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=500&h=300&auto=format&fit=crop" 
-                   alt="Office cleanout service" 
-                   class="w-full h-64 object-cover gallery-image">
-              <div class="absolute inset-0 bg-blue-900/20 group-hover:bg-blue-900/40 transition-all duration-300"></div>
+              <img
+                src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=500&h=300&auto=format&fit=crop"
+                alt="Office cleanout service"
+                class="w-full h-64 object-cover gallery-image"
+              />
+              <div
+                class="absolute inset-0 bg-blue-900/20 group-hover:bg-blue-900/40 transition-all duration-300"
+              ></div>
             </div>
             <div class="p-6">
               <h3 class="text-xl font-bold text-white mb-2">Office Cleanout</h3>
-              <p class="text-gray-400">Commercial space cleanup and furniture removal</p>
+              <p class="text-gray-400">
+                Commercial space cleanup and furniture removal
+              </p>
             </div>
           </div>
         </div>
 
         <div class="text-center mt-16">
-          <p class="text-xl text-gray-300 mb-6">Want to see your project featured here?</p>
-          <a href="tel:8545880808" class="inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-10 py-4 rounded-full text-lg font-semibold transition-all transform hover:scale-105 shadow-xl">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          <p class="text-xl text-gray-300 mb-6">
+            Want to see your project featured here?
+          </p>
+          <a
+            href="tel:8545880808"
+            class="inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-10 py-4 rounded-full text-lg font-semibold transition-all transform hover:scale-105 shadow-xl"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+              />
             </svg>
             Schedule Your Service
           </a>
@@ -539,133 +1019,272 @@
     <section id="pricing" class="py-24 px-6 bg-gray-900 text-white">
       <div class="max-w-7xl mx-auto">
         <div class="text-center mb-20">
-          <h2 class="text-5xl font-bold mb-8 text-blue-400">Transparent Pricing</h2>
+          <h2 class="text-5xl font-bold mb-8 text-blue-400">
+            Transparent Pricing
+          </h2>
           <p class="text-2xl text-gray-300 max-w-3xl mx-auto">
-            Fair, upfront pricing with no hidden fees. Get the service you need at a price that fits your budget.
+            Fair, upfront pricing with no hidden fees. Get the service you need
+            at a price that fits your budget.
           </p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
           <!-- Basic Plan -->
-          <div class="bg-gradient-to-br from-gray-800 to-gray-700 p-10 rounded-3xl shadow-2xl hover:shadow-blue-500/20 transition-all duration-500 border border-gray-600 hover:border-blue-500 hover:scale-105">
+          <div
+            class="bg-gradient-to-br from-gray-800 to-gray-700 p-10 rounded-3xl shadow-2xl hover:shadow-blue-500/20 transition-all duration-500 border border-gray-600 hover:border-blue-500 hover:scale-105"
+          >
             <div class="text-center">
               <h3 class="text-3xl font-bold text-white mb-4">Basic Service</h3>
-              <div class="text-5xl font-bold text-blue-400 mb-4">$75<span class="text-xl font-normal text-gray-400">/hour</span></div>
-              <p class="text-gray-300 mb-8 text-lg">Perfect for small junk removal and simple deliveries</p>
+              <div class="text-5xl font-bold text-blue-400 mb-4">
+                $75<span class="text-xl font-normal text-gray-400">/hour</span>
+              </div>
+              <p class="text-gray-300 mb-8 text-lg">
+                Perfect for small junk removal and simple deliveries
+              </p>
             </div>
             <ul class="space-y-4 mb-10">
               <li class="flex items-center gap-4">
-                <svg class="w-6 h-6 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                <svg
+                  class="w-6 h-6 text-green-400 flex-shrink-0"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
                 </svg>
                 <span class="text-gray-300 text-lg">Basic junk removal</span>
               </li>
               <li class="flex items-center gap-4">
-                <svg class="w-6 h-6 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                <svg
+                  class="w-6 h-6 text-green-400 flex-shrink-0"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
                 </svg>
                 <span class="text-gray-300 text-lg">Furniture delivery</span>
               </li>
               <li class="flex items-center gap-4">
-                <svg class="w-6 h-6 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                <svg
+                  class="w-6 h-6 text-green-400 flex-shrink-0"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
                 </svg>
                 <span class="text-gray-300 text-lg">Up to 1 truckload</span>
               </li>
               <li class="flex items-center gap-4">
-                <svg class="w-6 h-6 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                <svg
+                  class="w-6 h-6 text-green-400 flex-shrink-0"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
                 </svg>
                 <span class="text-gray-300 text-lg">Same-day service</span>
               </li>
             </ul>
-            <a href="tel:8545880808" class="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white py-4 rounded-2xl font-bold transition-all text-center block text-lg shadow-xl">
+            <a
+              href="tel:8545880808"
+              class="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white py-4 rounded-2xl font-bold transition-all text-center block text-lg shadow-xl"
+            >
               Book Now
             </a>
           </div>
 
           <!-- Standard Plan (Featured) -->
-          <div class="bg-gradient-to-br from-blue-600 to-blue-800 p-10 rounded-3xl shadow-2xl transform scale-105 border-2 border-blue-400 relative pulse-glow">
+          <div
+            class="bg-gradient-to-br from-blue-600 to-blue-800 p-10 rounded-3xl shadow-2xl transform scale-105 border-2 border-blue-400 relative pulse-glow"
+          >
             <div class="absolute -top-6 left-1/2 transform -translate-x-1/2">
-              <span class="bg-yellow-400 text-black px-6 py-2 rounded-full text-sm font-bold shadow-lg">MOST POPULAR</span>
+              <span
+                class="bg-yellow-400 text-black px-6 py-2 rounded-full text-sm font-bold shadow-lg"
+                >MOST POPULAR</span
+              >
             </div>
             <div class="text-center">
-              <h3 class="text-3xl font-bold text-white mb-4">Standard Service</h3>
-              <div class="text-5xl font-bold text-white mb-4">$125<span class="text-xl font-normal text-blue-200">/hour</span></div>
-              <p class="text-blue-100 mb-8 text-lg">Great for moving jobs and multi-service needs</p>
+              <h3 class="text-3xl font-bold text-white mb-4">
+                Standard Service
+              </h3>
+              <div class="text-5xl font-bold text-white mb-4">
+                $125<span class="text-xl font-normal text-blue-200">/hour</span>
+              </div>
+              <p class="text-blue-100 mb-8 text-lg">
+                Great for moving jobs and multi-service needs
+              </p>
             </div>
             <ul class="space-y-4 mb-10">
               <li class="flex items-center gap-4">
-                <svg class="w-6 h-6 text-green-300 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                <svg
+                  class="w-6 h-6 text-green-300 flex-shrink-0"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
                 </svg>
                 <span class="text-blue-100 text-lg">Everything in Basic</span>
               </li>
               <li class="flex items-center gap-4">
-                <svg class="w-6 h-6 text-green-300 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                <svg
+                  class="w-6 h-6 text-green-300 flex-shrink-0"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
                 </svg>
                 <span class="text-blue-100 text-lg">Small moves included</span>
               </li>
               <li class="flex items-center gap-4">
-                <svg class="w-6 h-6 text-green-300 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                <svg
+                  class="w-6 h-6 text-green-300 flex-shrink-0"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
                 </svg>
                 <span class="text-blue-100 text-lg">Up to 2 truckloads</span>
               </li>
               <li class="flex items-center gap-4">
-                <svg class="w-6 h-6 text-green-300 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                <svg
+                  class="w-6 h-6 text-green-300 flex-shrink-0"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
                 </svg>
                 <span class="text-blue-100 text-lg">Priority scheduling</span>
               </li>
             </ul>
-            <a href="tel:8545880808" class="w-full bg-white text-blue-600 hover:bg-gray-100 py-4 rounded-2xl font-bold transition-all text-center block text-lg shadow-xl">
+            <a
+              href="tel:8545880808"
+              class="w-full bg-white text-blue-600 hover:bg-gray-100 py-4 rounded-2xl font-bold transition-all text-center block text-lg shadow-xl"
+            >
               Book Now
             </a>
           </div>
 
           <!-- Premium Plan -->
-          <div class="bg-gradient-to-br from-gray-800 to-gray-700 p-10 rounded-3xl shadow-2xl hover:shadow-blue-500/20 transition-all duration-500 border border-gray-600 hover:border-blue-500 hover:scale-105">
+          <div
+            class="bg-gradient-to-br from-gray-800 to-gray-700 p-10 rounded-3xl shadow-2xl hover:shadow-blue-500/20 transition-all duration-500 border border-gray-600 hover:border-blue-500 hover:scale-105"
+          >
             <div class="text-center">
-              <h3 class="text-3xl font-bold text-white mb-4">Premium Service</h3>
-              <div class="text-5xl font-bold text-blue-400 mb-4">Custom<span class="text-xl font-normal text-gray-400"> Quote</span></div>
-              <p class="text-gray-300 mb-8 text-lg">For large jobs and construction deliveries</p>
+              <h3 class="text-3xl font-bold text-white mb-4">
+                Premium Service
+              </h3>
+              <div class="text-5xl font-bold text-blue-400 mb-4">
+                Custom<span class="text-xl font-normal text-gray-400">
+                  Quote</span
+                >
+              </div>
+              <p class="text-gray-300 mb-8 text-lg">
+                For large jobs and construction deliveries
+              </p>
             </div>
             <ul class="space-y-4 mb-10">
               <li class="flex items-center gap-4">
-                <svg class="w-6 h-6 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                <svg
+                  class="w-6 h-6 text-green-400 flex-shrink-0"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
                 </svg>
                 <span class="text-gray-300 text-lg">All services included</span>
               </li>
               <li class="flex items-center gap-4">
-                <svg class="w-6 h-6 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                <svg
+                  class="w-6 h-6 text-green-400 flex-shrink-0"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
                 </svg>
-                <span class="text-gray-300 text-lg">Construction materials</span>
+                <span class="text-gray-300 text-lg"
+                  >Construction materials</span
+                >
               </li>
               <li class="flex items-center gap-4">
-                <svg class="w-6 h-6 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                <svg
+                  class="w-6 h-6 text-green-400 flex-shrink-0"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
                 </svg>
                 <span class="text-gray-300 text-lg">Multiple truck loads</span>
               </li>
               <li class="flex items-center gap-4">
-                <svg class="w-6 h-6 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                <svg
+                  class="w-6 h-6 text-green-400 flex-shrink-0"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
                 </svg>
                 <span class="text-gray-300 text-lg">Project consultation</span>
               </li>
             </ul>
-            <a href="tel:8545880808" class="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white py-4 rounded-2xl font-bold transition-all text-center block text-lg shadow-xl">
+            <a
+              href="tel:8545880808"
+              class="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white py-4 rounded-2xl font-bold transition-all text-center block text-lg shadow-xl"
+            >
               Get Quote
             </a>
           </div>
         </div>
 
         <div class="text-center mt-16">
-          <p class="text-gray-400 text-xl">All prices include labor, transport, and eco-friendly disposal fees</p>
+          <p class="text-gray-400 text-xl">
+            All prices include labor, transport, and eco-friendly disposal fees
+          </p>
         </div>
       </div>
     </section>
@@ -673,58 +1292,111 @@
     <!-- Testimonials Section -->
     <section class="py-24 bg-black text-white overflow-hidden">
       <div class="text-center mb-20">
-        <h2 class="text-5xl font-bold mb-8 text-blue-400">What Our Customers Say</h2>
+        <h2 class="text-5xl font-bold mb-8 text-blue-400">
+          What Our Customers Say
+        </h2>
         <p class="text-2xl text-gray-300 max-w-3xl mx-auto">
-          Don't just take our word for it - hear from our satisfied customers across the Grand Strand
+          Don't just take our word for it - hear from our satisfied customers
+          across the Grand Strand
         </p>
       </div>
 
       <!-- Testimonials Marquee -->
-      <div class="marquee-row w-full mx-auto max-w-7xl overflow-hidden relative">
-        <div class="absolute left-0 top-0 h-full w-20 z-10 pointer-events-none bg-gradient-to-r from-black to-transparent"></div>
-        <div class="marquee-inner flex transform-gpu min-w-[200%] py-5" id="testimonials-row1"></div>
-        <div class="absolute right-0 top-0 h-full w-20 md:w-40 z-10 pointer-events-none bg-gradient-to-l from-black to-transparent"></div>
+      <div
+        class="marquee-row w-full mx-auto max-w-7xl overflow-hidden relative"
+      >
+        <div
+          class="absolute left-0 top-0 h-full w-20 z-10 pointer-events-none bg-gradient-to-r from-black to-transparent"
+        ></div>
+        <div
+          class="marquee-inner flex transform-gpu min-w-[200%] py-5"
+          id="testimonials-row1"
+        ></div>
+        <div
+          class="absolute right-0 top-0 h-full w-20 md:w-40 z-10 pointer-events-none bg-gradient-to-l from-black to-transparent"
+        ></div>
       </div>
 
-      <div class="marquee-row w-full mx-auto max-w-7xl overflow-hidden relative mt-8">
-        <div class="absolute left-0 top-0 h-full w-20 z-10 pointer-events-none bg-gradient-to-r from-black to-transparent"></div>
-        <div class="marquee-inner marquee-reverse flex transform-gpu min-w-[200%] py-5" id="testimonials-row2"></div>
-        <div class="absolute right-0 top-0 h-full w-20 md:w-40 z-10 pointer-events-none bg-gradient-to-l from-black to-transparent"></div>
+      <div
+        class="marquee-row w-full mx-auto max-w-7xl overflow-hidden relative mt-8"
+      >
+        <div
+          class="absolute left-0 top-0 h-full w-20 z-10 pointer-events-none bg-gradient-to-r from-black to-transparent"
+        ></div>
+        <div
+          class="marquee-inner marquee-reverse flex transform-gpu min-w-[200%] py-5"
+          id="testimonials-row2"
+        ></div>
+        <div
+          class="absolute right-0 top-0 h-full w-20 md:w-40 z-10 pointer-events-none bg-gradient-to-l from-black to-transparent"
+        ></div>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-24 px-6 bg-gradient-to-b from-gray-900 to-black text-white">
+    <section
+      id="contact"
+      class="py-24 px-6 bg-gradient-to-b from-gray-900 to-black text-white"
+    >
       <div class="max-w-7xl mx-auto">
         <div class="text-center mb-20">
-          <h2 class="text-5xl font-bold mb-8 text-blue-400">Get Your Free Quote Today</h2>
+          <h2 class="text-5xl font-bold mb-8 text-blue-400">
+            Get Your Free Quote Today
+          </h2>
           <p class="text-2xl text-gray-300 max-w-3xl mx-auto">
-            Ready to clear out that junk or need something delivered? Contact Daniel today for fast, reliable service!
+            Ready to clear out that junk or need something delivered? Contact
+            Daniel today for fast, reliable service!
           </p>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
           <!-- Contact Form -->
-          <div class="bg-black/60 backdrop-blur-lg border border-gray-700 rounded-3xl p-10 shadow-2xl">
-            <h3 class="text-3xl font-bold text-white mb-8">Send us a message</h3>
+          <div
+            class="bg-black/60 backdrop-blur-lg border border-gray-700 rounded-3xl p-10 shadow-2xl"
+          >
+            <h3 class="text-3xl font-bold text-white mb-8">
+              Send us a message
+            </h3>
             <form class="space-y-8" id="contactForm">
               <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                  <label class="block mb-3 text-lg font-medium text-gray-300">Your Name</label>
-                  <input type="text" placeholder="Enter your name" class="w-full p-4 rounded-xl bg-gray-800/70 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all text-lg" />
+                  <label class="block mb-3 text-lg font-medium text-gray-300"
+                    >Your Name</label
+                  >
+                  <input
+                    type="text"
+                    placeholder="Enter your name"
+                    class="w-full p-4 rounded-xl bg-gray-800/70 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all text-lg"
+                  />
                 </div>
                 <div>
-                  <label class="block mb-3 text-lg font-medium text-gray-300">Phone Number</label>
-                  <input type="tel" placeholder="Enter your phone" class="w-full p-4 rounded-xl bg-gray-800/70 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all text-lg" />
+                  <label class="block mb-3 text-lg font-medium text-gray-300"
+                    >Phone Number</label
+                  >
+                  <input
+                    type="tel"
+                    placeholder="Enter your phone"
+                    class="w-full p-4 rounded-xl bg-gray-800/70 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all text-lg"
+                  />
                 </div>
               </div>
               <div>
-                <label class="block mb-3 text-lg font-medium text-gray-300">Email Address</label>
-                <input type="email" placeholder="Enter your email" class="w-full p-4 rounded-xl bg-gray-800/70 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all text-lg" />
+                <label class="block mb-3 text-lg font-medium text-gray-300"
+                  >Email Address</label
+                >
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  class="w-full p-4 rounded-xl bg-gray-800/70 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all text-lg"
+                />
               </div>
               <div>
-                <label class="block mb-3 text-lg font-medium text-gray-300">Service Needed</label>
-                <select class="w-full p-4 rounded-xl bg-gray-800/70 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all text-lg">
+                <label class="block mb-3 text-lg font-medium text-gray-300"
+                  >Service Needed</label
+                >
+                <select
+                  class="w-full p-4 rounded-xl bg-gray-800/70 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all text-lg"
+                >
                   <option>Select a service</option>
                   <option>Junk Removal</option>
                   <option>Furniture Delivery</option>
@@ -734,10 +1406,19 @@
                 </select>
               </div>
               <div>
-                <label class="block mb-3 text-lg font-medium text-gray-300">Message</label>
-                <textarea rows="5" placeholder="Tell us about your project..." class="w-full p-4 rounded-xl bg-gray-800/70 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none text-lg"></textarea>
+                <label class="block mb-3 text-lg font-medium text-gray-300"
+                  >Message</label
+                >
+                <textarea
+                  rows="5"
+                  placeholder="Tell us about your project..."
+                  class="w-full p-4 rounded-xl bg-gray-800/70 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none text-lg"
+                ></textarea>
               </div>
-              <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white py-5 rounded-xl font-bold transition-all transform hover:scale-105 shadow-xl text-lg">
+              <button
+                type="submit"
+                class="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white py-5 rounded-xl font-bold transition-all transform hover:scale-105 shadow-xl text-lg"
+              >
                 Send Message
               </button>
             </form>
@@ -745,34 +1426,90 @@
 
           <!-- Contact Info -->
           <div class="space-y-10">
-            <div class="bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 rounded-3xl p-10 text-center shadow-2xl pulse-glow">
-              <div class="w-24 h-24 bg-white rounded-full flex items-center justify-center mx-auto mb-8 truck-animation shadow-2xl">
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            <div
+              class="bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 rounded-3xl p-10 text-center shadow-2xl pulse-glow"
+            >
+              <div
+                class="w-24 h-24 bg-white rounded-full flex items-center justify-center mx-auto mb-8 truck-animation shadow-2xl"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="48"
+                  height="48"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#2563eb"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  />
                 </svg>
               </div>
-              <h3 class="text-3xl font-bold text-white mb-6">Call for Immediate Service</h3>
-              <a href="tel:8545880808" class="text-4xl font-bold text-white hover:text-blue-200 transition-colors">854-588-0808</a>
+              <h3 class="text-3xl font-bold text-white mb-6">
+                Call for Immediate Service
+              </h3>
+              <a
+                href="tel:8545880808"
+                class="text-4xl font-bold text-white hover:text-blue-200 transition-colors"
+                >854-588-0808</a
+              >
               <p class="text-blue-100 mt-6 text-xl">Available 7 days a week</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div class="bg-black/60 backdrop-blur-lg border border-gray-700 rounded-2xl p-8 text-center shadow-2xl">
-                <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl flex items-center justify-center mx-auto mb-6">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                    <polyline points="22,6 12,13 2,6"/>
+              <div
+                class="bg-black/60 backdrop-blur-lg border border-gray-700 rounded-2xl p-8 text-center shadow-2xl"
+              >
+                <div
+                  class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl flex items-center justify-center mx-auto mb-6"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                    />
+                    <polyline points="22,6 12,13 2,6" />
                   </svg>
                 </div>
                 <h4 class="font-bold text-white mb-3 text-xl">Email Us</h4>
-                <a href="mailto:metinmail@yahoo.com" class="text-blue-400 hover:text-blue-300 transition-colors text-lg">metinmail@yahoo.com</a>
+                <a
+                  href="mailto:metinmail@yahoo.com"
+                  class="text-blue-400 hover:text-blue-300 transition-colors text-lg"
+                  >metinmail@yahoo.com</a
+                >
               </div>
 
-              <div class="bg-black/60 backdrop-blur-lg border border-gray-700 rounded-2xl p-8 text-center shadow-2xl">
-                <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl flex items-center justify-center mx-auto mb-6">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                    <circle cx="12" cy="10" r="3"/>
+              <div
+                class="bg-black/60 backdrop-blur-lg border border-gray-700 rounded-2xl p-8 text-center shadow-2xl"
+              >
+                <div
+                  class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl flex items-center justify-center mx-auto mb-6"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                    <circle cx="12" cy="10" r="3" />
                   </svg>
                 </div>
                 <h4 class="font-bold text-white mb-3 text-xl">Service Area</h4>
@@ -780,50 +1517,124 @@
               </div>
             </div>
 
-            <div class="bg-black/60 backdrop-blur-lg border border-gray-700 rounded-2xl p-8 shadow-2xl">
-              <h4 class="font-bold text-white mb-6 text-center text-2xl">Areas We Serve</h4>
+            <div
+              class="bg-black/60 backdrop-blur-lg border border-gray-700 rounded-2xl p-8 shadow-2xl"
+            >
+              <h4 class="font-bold text-white mb-6 text-center text-2xl">
+                Areas We Serve
+              </h4>
               <div class="grid grid-cols-2 gap-6">
                 <div class="text-center">
-                  <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center mx-auto mb-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                      <circle cx="12" cy="10" r="3"/>
+                  <div
+                    class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center mx-auto mb-3"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                      />
+                      <circle cx="12" cy="10" r="3" />
                     </svg>
                   </div>
                   <p class="text-blue-400 font-semibold">Little River</p>
                 </div>
                 <div class="text-center">
-                  <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center mx-auto mb-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                      <circle cx="12" cy="10" r="3"/>
+                  <div
+                    class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center mx-auto mb-3"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                      />
+                      <circle cx="12" cy="10" r="3" />
                     </svg>
                   </div>
                   <p class="text-blue-400 font-semibold">Calabash</p>
                 </div>
                 <div class="text-center">
-                  <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center mx-auto mb-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                      <circle cx="12" cy="10" r="3"/>
+                  <div
+                    class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center mx-auto mb-3"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                      />
+                      <circle cx="12" cy="10" r="3" />
                     </svg>
                   </div>
                   <p class="text-blue-400 font-semibold">N. Myrtle Beach</p>
                 </div>
                 <div class="text-center">
-                  <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center mx-auto mb-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                      <circle cx="12" cy="10" r="3"/>
+                  <div
+                    class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center mx-auto mb-3"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                      />
+                      <circle cx="12" cy="10" r="3" />
                     </svg>
                   </div>
                   <p class="text-blue-400 font-semibold">Longs</p>
                 </div>
                 <div class="text-center col-span-2">
-                  <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center mx-auto mb-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                      <circle cx="12" cy="10" r="3"/>
+                  <div
+                    class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center mx-auto mb-3"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                      />
+                      <circle cx="12" cy="10" r="3" />
                     </svg>
                   </div>
                   <p class="text-blue-400 font-semibold">Myrtle Beach</p>
@@ -832,12 +1643,26 @@
             </div>
 
             <!-- Social Media -->
-            <div class="bg-black/60 backdrop-blur-lg border border-gray-700 rounded-2xl p-8 text-center shadow-2xl">
+            <div
+              class="bg-black/60 backdrop-blur-lg border border-gray-700 rounded-2xl p-8 text-center shadow-2xl"
+            >
               <h4 class="font-bold text-white mb-6 text-2xl">Follow Us</h4>
               <div class="flex justify-center space-x-6">
-                <a href="https://www.facebook.com/profile.php?id=61578675911235" target="_blank" class="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 rounded-full flex items-center justify-center transition-all transform hover:scale-110 shadow-xl">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                <a
+                  href="https://www.facebook.com/profile.php?id=61578675911235"
+                  target="_blank"
+                  class="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 rounded-full flex items-center justify-center transition-all transform hover:scale-110 shadow-xl"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                    />
                   </svg>
                 </a>
               </div>
@@ -854,26 +1679,55 @@
           <!-- Company Info -->
           <div>
             <div class="flex items-center space-x-4 mb-6">
-              <div class="bg-gradient-to-br from-blue-500 to-blue-700 p-3 rounded-xl shadow-xl">
-                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M5 17h2v2a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-2h2a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-4V5a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1z"/>
-                  <circle cx="7.5" cy="19.5" r="1.5"/>
-                  <circle cx="16.5" cy="19.5" r="1.5"/>
+              <div
+                class="bg-gradient-to-br from-blue-500 to-blue-700 p-3 rounded-xl shadow-xl"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M5 17h2v2a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-2h2a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-4V5a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1z"
+                  />
+                  <circle cx="7.5" cy="19.5" r="1.5" />
+                  <circle cx="16.5" cy="19.5" r="1.5" />
                 </svg>
               </div>
               <div>
-                <h3 class="text-2xl font-bold text-white">Daniel Junk Removal</h3>
+                <h3 class="text-2xl font-bold text-white">
+                  Daniel Junk Removal
+                </h3>
                 <p class="text-blue-300">& Furniture Delivery</p>
               </div>
             </div>
             <p class="text-gray-400 mb-6 text-lg leading-relaxed">
-              Professional junk removal and furniture delivery services across the Grand Strand. 
+              Professional junk removal and furniture delivery services across
+              the Grand Strand.
               <strong class="text-blue-400">"You Call, I Haul!"</strong>
             </p>
             <div class="flex space-x-4">
-              <a href="https://www.facebook.com/profile.php?id=61578675911235" target="_blank" class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 rounded-full flex items-center justify-center transition-all transform hover:scale-110 shadow-xl">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              <a
+                href="https://www.facebook.com/profile.php?id=61578675911235"
+                target="_blank"
+                class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 rounded-full flex items-center justify-center transition-all transform hover:scale-110 shadow-xl"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                  />
                 </svg>
               </a>
             </div>
@@ -883,12 +1737,38 @@
           <div>
             <h4 class="text-2xl font-bold text-white mb-6">Quick Links</h4>
             <ul class="space-y-3 text-gray-400 text-lg">
-              <li><a href="#home" class="hover:text-blue-400 transition-colors">Home</a></li>
-              <li><a href="#about" class="hover:text-blue-400 transition-colors">About Us</a></li>
-              <li><a href="#services" class="hover:text-blue-400 transition-colors">Services</a></li>
-              <li><a href="#gallery" class="hover:text-blue-400 transition-colors">Gallery</a></li>
-              <li><a href="#pricing" class="hover:text-blue-400 transition-colors">Pricing</a></li>
-              <li><a href="#contact" class="hover:text-blue-400 transition-colors">Contact</a></li>
+              <li>
+                <a href="#home" class="hover:text-blue-400 transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#about" class="hover:text-blue-400 transition-colors"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  class="hover:text-blue-400 transition-colors"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a href="#gallery" class="hover:text-blue-400 transition-colors"
+                  >Gallery</a
+                >
+              </li>
+              <li>
+                <a href="#pricing" class="hover:text-blue-400 transition-colors"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="hover:text-blue-400 transition-colors"
+                  >Contact</a
+                >
+              </li>
             </ul>
           </div>
 
@@ -897,29 +1777,81 @@
             <h4 class="text-2xl font-bold text-white mb-6">Get In Touch</h4>
             <div class="space-y-4 text-gray-400 text-lg">
               <div class="flex items-center gap-4">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  />
                 </svg>
-                <a href="tel:8545880808" class="hover:text-blue-400 transition-colors font-semibold">854-588-0808</a>
+                <a
+                  href="tel:8545880808"
+                  class="hover:text-blue-400 transition-colors font-semibold"
+                  >854-588-0808</a
+                >
               </div>
               <div class="flex items-center gap-4">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                  <polyline points="22,6 12,13 2,6"/>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  />
+                  <polyline points="22,6 12,13 2,6" />
                 </svg>
-                <a href="mailto:metinmail@yahoo.com" class="hover:text-blue-400 transition-colors">metinmail@yahoo.com</a>
+                <a
+                  href="mailto:metinmail@yahoo.com"
+                  class="hover:text-blue-400 transition-colors"
+                  >metinmail@yahoo.com</a
+                >
               </div>
               <div class="flex items-center gap-4">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                  <circle cx="12" cy="10" r="3"/>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
                 </svg>
                 <span>Serving the Grand Strand</span>
               </div>
               <div class="flex items-center gap-4">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="10"/>
-                  <polyline points="12,6 12,12 16,14"/>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12,6 12,12 16,14" />
                 </svg>
                 <span>7 Days a Week</span>
               </div>
@@ -929,9 +1861,16 @@
 
         <hr class="border-gray-800 mb-8" />
 
-        <div class="flex flex-col md:flex-row justify-between items-center text-gray-400">
-          <p class="text-lg">&copy; 2024 Daniel Junk Removal & Furniture Delivery. All rights reserved.</p>
-          <p class="mt-4 md:mt-0 text-lg">Licensed & Insured • Eco-Friendly Disposal</p>
+        <div
+          class="flex flex-col md:flex-row justify-between items-center text-gray-400"
+        >
+          <p class="text-lg">
+            &copy; 2024 Daniel Junk Removal & Furniture Delivery. All rights
+            reserved.
+          </p>
+          <p class="mt-4 md:mt-0 text-lg">
+            Licensed & Insured • Eco-Friendly Disposal
+          </p>
         </div>
       </div>
     </footer>
@@ -953,23 +1892,23 @@
       });
 
       // Close mobile menu when clicking on a link
-      const menuLinks = menu.querySelectorAll('a');
-      menuLinks.forEach(link => {
-        link.addEventListener('click', () => {
+      const menuLinks = menu.querySelectorAll("a");
+      menuLinks.forEach((link) => {
+        link.addEventListener("click", () => {
           menu.classList.remove("max-md:w-full");
           menu.classList.add("max-md:w-0");
         });
       });
 
       // Smooth scrolling for anchor links
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
           e.preventDefault();
-          const target = document.querySelector(this.getAttribute('href'));
+          const target = document.querySelector(this.getAttribute("href"));
           if (target) {
             target.scrollIntoView({
-              behavior: 'smooth',
-              block: 'start'
+              behavior: "smooth",
+              block: "start",
             });
           }
         });
@@ -978,64 +1917,78 @@
       // Testimonials data
       const testimonialsData = [
         {
-          image: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200",
+          image:
+            "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200",
           name: "Sarah Mitchell",
           location: "North Myrtle Beach",
           rating: 5,
-          text: "Daniel was amazing! He cleared out our entire garage in just 2 hours. Professional, friendly, and very reasonably priced. Highly recommend!"
+          text: "Daniel was amazing! He cleared out our entire garage in just 2 hours. Professional, friendly, and very reasonably priced. Highly recommend!",
         },
         {
-          image: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200",
+          image:
+            "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200",
           name: "Mike Johnson",
           location: "Little River",
           rating: 5,
-          text: "Needed furniture delivered from a store in Myrtle Beach. Daniel was prompt, careful with our new couch, and even helped us position it perfectly."
+          text: "Needed furniture delivered from a store in Myrtle Beach. Daniel was prompt, careful with our new couch, and even helped us position it perfectly.",
         },
         {
-          image: "https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=200&auto=format&fit=crop&q=60",
+          image:
+            "https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=200&auto=format&fit=crop&q=60",
           name: "Lisa Chen",
           location: "Calabash",
           rating: 5,
-          text: "Great service for our small apartment move! Daniel handled everything with care and made the whole process stress-free. Will definitely use again."
+          text: "Great service for our small apartment move! Daniel handled everything with care and made the whole process stress-free. Will definitely use again.",
         },
         {
-          image: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=200&auto=format&fit=crop&q=60",
+          image:
+            "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=200&auto=format&fit=crop&q=60",
           name: "Robert Davis",
           location: "Longs",
           rating: 5,
-          text: "Had construction materials delivered to my job site. Daniel was reliable, on time, and helped unload everything exactly where I needed it."
+          text: "Had construction materials delivered to my job site. Daniel was reliable, on time, and helped unload everything exactly where I needed it.",
         },
         {
-          image: "https://images.unsplash.com/photo-1494790108755-2616b332c15c?w=200&auto=format&fit=crop&q=60",
+          image:
+            "https://images.unsplash.com/photo-1494790108755-2616b332c15c?w=200&auto=format&fit=crop&q=60",
           name: "Jennifer Williams",
           location: "Myrtle Beach",
           rating: 5,
-          text: "Called Daniel for same-day junk removal after our kitchen renovation. He came within hours and cleaned up all the debris. Excellent service!"
+          text: "Called Daniel for same-day junk removal after our kitchen renovation. He came within hours and cleaned up all the debris. Excellent service!",
         },
         {
-          image: "https://images.unsplash.com/photo-1507003148972-516a03b65091?w=200&auto=format&fit=crop&q=60",
+          image:
+            "https://images.unsplash.com/photo-1507003148972-516a03b65091?w=200&auto=format&fit=crop&q=60",
           name: "Tom Anderson",
           location: "North Myrtle Beach",
           rating: 5,
-          text: "Very professional and efficient. Daniel helped us clear out our late mother's house with compassion and respect. Couldn't ask for better service."
-        }
+          text: "Very professional and efficient. Daniel helped us clear out our late mother's house with compassion and respect. Couldn't ask for better service.",
+        },
       ];
 
       const createTestimonialCard = (testimonial) => `
         <div class="p-8 rounded-3xl mx-6 shadow-2xl w-96 shrink-0 bg-gradient-to-br from-gray-800 via-gray-700 to-gray-600 border border-gray-600 hover:border-blue-500 transition-all duration-500">
           <div class="flex items-center gap-5 mb-6">
-            <img class="w-16 h-16 rounded-full object-cover shadow-lg" src="${testimonial.image}" alt="${testimonial.name}">
+            <img class="w-16 h-16 rounded-full object-cover shadow-lg" src="${
+              testimonial.image
+            }" alt="${testimonial.name}">
             <div>
               <h4 class="font-bold text-white text-xl">${testimonial.name}</h4>
               <p class="text-blue-400 font-medium">${testimonial.location}</p>
             </div>
           </div>
           <div class="flex mb-4">
-            ${Array(testimonial.rating).fill().map(() => 
-              '<svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>'
-            ).join('')}
+            ${Array(testimonial.rating)
+              .fill()
+              .map(
+                () =>
+                  '<svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>'
+              )
+              .join("")}
           </div>
-          <p class="text-gray-300 leading-relaxed text-lg">"${testimonial.text}"</p>
+          <p class="text-gray-300 leading-relaxed text-lg">"${
+            testimonial.text
+          }"</p>
         </div>
       `;
 
@@ -1043,9 +1996,15 @@
       const row2 = document.getElementById("testimonials-row2");
 
       const renderTestimonials = (target, startIndex = 0) => {
-        const testimonialsToRender = [...testimonialsData.slice(startIndex), ...testimonialsData.slice(startIndex)];
+        const testimonialsToRender = [
+          ...testimonialsData.slice(startIndex),
+          ...testimonialsData.slice(startIndex),
+        ];
         testimonialsToRender.forEach((testimonial) =>
-          target.insertAdjacentHTML("beforeend", createTestimonialCard(testimonial))
+          target.insertAdjacentHTML(
+            "beforeend",
+            createTestimonialCard(testimonial)
+          )
         );
       };
 
@@ -1053,13 +2012,16 @@
       renderTestimonials(row2, 3);
 
       // Form submission
-      document.getElementById('contactForm').addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Create success message
-        const successDiv = document.createElement('div');
-        successDiv.className = 'fixed top-4 right-4 bg-green-600 text-white px-6 py-4 rounded-lg shadow-xl z-50 transform translate-x-full transition-transform duration-300';
-        successDiv.innerHTML = `
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // Create success message
+          const successDiv = document.createElement("div");
+          successDiv.className =
+            "fixed top-4 right-4 bg-green-600 text-white px-6 py-4 rounded-lg shadow-xl z-50 transform translate-x-full transition-transform duration-300";
+          successDiv.innerHTML = `
           <div class="flex items-center gap-3">
             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
@@ -1067,115 +2029,118 @@
             <span class="font-semibold">Thank you! Daniel will contact you soon.</span>
           </div>
         `;
-        
-        document.body.appendChild(successDiv);
-        
-        // Animate in
-        setTimeout(() => {
-          successDiv.style.transform = 'translateX(0)';
-        }, 100);
-        
-        // Animate out and remove
-        setTimeout(() => {
-          successDiv.style.transform = 'translateX(100%)';
+
+          document.body.appendChild(successDiv);
+
+          // Animate in
           setTimeout(() => {
-            document.body.removeChild(successDiv);
-          }, 300);
-        }, 3000);
-        
-        // Reset form
-        this.reset();
-      });
+            successDiv.style.transform = "translateX(0)";
+          }, 100);
+
+          // Animate out and remove
+          setTimeout(() => {
+            successDiv.style.transform = "translateX(100%)";
+            setTimeout(() => {
+              document.body.removeChild(successDiv);
+            }, 300);
+          }, 3000);
+
+          // Reset form
+          this.reset();
+        });
 
       // Add fade-in animation to elements when they come into view
       const observerOptions = {
         threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
+        rootMargin: "0px 0px -50px 0px",
       };
 
       const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
+        entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('fade-in');
+            entry.target.classList.add("fade-in");
           }
         });
       }, observerOptions);
 
       // Observe sections for animation
-      document.querySelectorAll('section').forEach(section => {
+      document.querySelectorAll("section").forEach((section) => {
         observer.observe(section);
       });
 
       // Add scroll effect to navigation
-      window.addEventListener('scroll', () => {
-        const nav = document.querySelector('nav');
+      window.addEventListener("scroll", () => {
+        const nav = document.querySelector("nav");
         if (window.scrollY > 100) {
-          nav.classList.add('backdrop-blur-lg', 'bg-black/80');
+          nav.classList.add("backdrop-blur-lg", "bg-black/80");
         } else {
-          nav.classList.remove('backdrop-blur-lg', 'bg-black/80');
+          nav.classList.remove("backdrop-blur-lg", "bg-black/80");
         }
       });
 
       // Add loading animation
-      window.addEventListener('load', () => {
-        document.body.classList.add('loaded');
-        
+      window.addEventListener("load", () => {
+        document.body.classList.add("loaded");
+
         // Animate hero elements
-        const heroElements = document.querySelectorAll('#home .fade-in');
+        const heroElements = document.querySelectorAll("#home .fade-in");
         heroElements.forEach((el, index) => {
           setTimeout(() => {
-            el.style.opacity = '1';
-            el.style.transform = 'translateY(0)';
+            el.style.opacity = "1";
+            el.style.transform = "translateY(0)";
           }, index * 200);
         });
       });
 
       // Add click tracking for calls to action
-      document.querySelectorAll('a[href^="tel:"]').forEach(link => {
-        link.addEventListener('click', () => {
+      document.querySelectorAll('a[href^="tel:"]').forEach((link) => {
+        link.addEventListener("click", () => {
           // You can add analytics tracking here
-          console.log('Phone call initiated');
+          console.log("Phone call initiated");
         });
       });
 
       // Add hover effects for service cards
-      document.querySelectorAll('#services .group').forEach(card => {
-        card.addEventListener('mouseenter', () => {
-          card.style.transform = 'translateY(-10px) scale(1.02)';
+      document.querySelectorAll("#services .group").forEach((card) => {
+        card.addEventListener("mouseenter", () => {
+          card.style.transform = "translateY(-10px) scale(1.02)";
         });
-        
-        card.addEventListener('mouseleave', () => {
-          card.style.transform = 'translateY(0) scale(1)';
+
+        card.addEventListener("mouseleave", () => {
+          card.style.transform = "translateY(0) scale(1)";
         });
       });
 
       // Performance optimization: Lazy load images
-      if ('IntersectionObserver' in window) {
+      if ("IntersectionObserver" in window) {
         const imageObserver = new IntersectionObserver((entries, observer) => {
-          entries.forEach(entry => {
+          entries.forEach((entry) => {
             if (entry.isIntersecting) {
               const img = entry.target;
               img.src = img.dataset.src;
-              img.classList.remove('lazy');
+              img.classList.remove("lazy");
               imageObserver.unobserve(img);
             }
           });
         });
 
-        document.querySelectorAll('img[data-src]').forEach(img => {
+        document.querySelectorAll("img[data-src]").forEach((img) => {
           imageObserver.observe(img);
         });
       }
 
       // Add dynamic year to footer
-      document.addEventListener('DOMContentLoaded', () => {
+      document.addEventListener("DOMContentLoaded", () => {
         const currentYear = new Date().getFullYear();
-        const copyrightText = document.querySelector('footer p');
+        const copyrightText = document.querySelector("footer p");
         if (copyrightText) {
-          copyrightText.textContent = copyrightText.textContent.replace('2024', currentYear);
+          copyrightText.textContent = copyrightText.textContent.replace(
+            "2024",
+            currentYear
+          );
         }
       });
     </script>
   </body>
-</html>>
-             
+</html>
+>
